@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"canbox3\startup_stm32f103xb.o"
+"canbox3\stm32f1xx_it.o"
+"canbox3\main.o"
+"canbox3\stm32f1xx_hal_msp.o"
+"canbox3\stm32f1xx_hal_dma.o"
+"canbox3\stm32f1xx_hal_tim.o"
+"canbox3\stm32f1xx_hal_rcc_ex.o"
+"canbox3\stm32f1xx_hal_flash_ex.o"
+"canbox3\stm32f1xx_hal_rcc.o"
+"canbox3\stm32f1xx_hal_cortex.o"
+"canbox3\stm32f1xx_hal_adc_ex.o"
+"canbox3\stm32f1xx_hal_flash.o"
+"canbox3\stm32f1xx_hal_pwr.o"
+"canbox3\stm32f1xx_hal_can.o"
+"canbox3\stm32f1xx_hal_gpio_ex.o"
+"canbox3\stm32f1xx_hal_uart.o"
+"canbox3\stm32f1xx_hal_adc.o"
+"canbox3\stm32f1xx_hal_gpio.o"
+"canbox3\stm32f1xx_hal.o"
+"canbox3\stm32f1xx_hal_tim_ex.o"
+"canbox3\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "CANbox3\CANbox3.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "CANbox3.map" -o CANbox3\CANbox3.axf
